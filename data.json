@@ -1,0 +1,364 @@
+{
+    "intents":
+    [
+        {
+                    "tag":"greeting",
+                    "patterns":
+                    [
+                                "Hi",
+                                "How are you",
+                                "Hello",
+                                "Good day",
+                                "Whats up",
+                                "how are you",
+                                "heyy",
+                                "whatsup",
+                                "Hey there"
+                    ],
+                    "responses":
+                    [
+                                "Hello!",
+                                "Good to see you again",
+                                "Hi there! How can I assist you today?",
+                                "Hello! What can I help you with?",
+                                "Hey there! What do you need help with?",
+                                "Good morning! How can I assist you today?",
+                                "Good afternoon! What can I help you with?"
+                    ], 
+                    "context_text": ""
+        },
+        {
+                    "tag": "admission",
+                    "patterns":
+                        [
+                                "How do I apply for admission?",
+                                "What are the admission requirements?",
+                                "When is the deadline to apply?",
+                                "Can you tell me about the admission process?",
+                                "What are the minimum requirements for admission?"
+                        ],
+                    "responses":
+                     [
+                                "You can apply for admission by visiting our website and submitting an online application. The admission requirements and deadlines can be found on our website as well.",
+                                "The admission requirements and deadlines can be found on our website. We encourage you to apply online as soon as possible to ensure consideration for admission.",
+                                "Our admission process involves several steps, including submitting an application, providing transcripts and test scores, and possibly participating in an interview. You can find more information on our website.",
+                                "To apply for admission, you will need to submit an online application and provide transcripts and test scores. The admission requirements and deadlines can be found on our website.",
+                                "Our minimum requirements for admission vary depending on the program and degree level. You can find more information about the requirements on our website."
+                     ],
+                "context_text": ""
+        },
+        {
+                    "tag": "courses",
+                    "patterns":
+                        [
+                                "What courses do you offer?",
+                                "Can you tell me about your programs?",
+                                "What are the course requirements?",
+                                "How long does it take to complete a program?"
+                        ],
+                    "responses":
+                        [
+                                "We offer a wide range of undergraduate and graduate programs in various disciplines, including engineering, sciences, humanities, and social sciences. You can find more information about our programs on our website.",
+                                "Our programs are designed to provide students with a strong foundation in their chosen discipline, as well as opportunities for research, internships, and practical experience. You can find more information about our programs on our website.",
+                                "The course requirements vary depending on the program and degree level. You can find more information about the requirements for each program on our website.",
+                                "The duration of our programs varies depending on the degree level and program. Most undergraduate programs take four years to complete, while graduate programs can take anywhere from one to three years or more. You can find more information about the duration of each program on our website."
+                        ],
+                        "context_text": ""
+        },
+        {
+                        "tag": "contact",
+                        "patterns": 
+                        [
+                                "How can I contact the university?",
+                                "What is the phone number for the university?",
+                                "Can you provide me with an email address?",
+                                "What is the physical address of the university?"
+                        ],
+                        "responses": 
+                        [
+                                "You can contact the university by phone or email. The phone number and email address can be found on our website.",
+                                "Our phone number is [insert phone number]. You can also send an email to [insert email address].",
+                                "You can email us at [insert email address]. Our phone number is [insert phone number].",
+                                "The physical address of the university is [insert address]. You can find a map and directions on our website."
+                        ],
+                        "context_text":""
+        },
+        {
+                        "tag": "library",
+                        "patterns": 
+                        [
+                                "Can you tell me about the library?",
+                                "What resources are available at the library?",
+                                "What are the library hours?",
+                                "Do I need a library card to borrow materials?"
+                        ],
+                        "responses": 
+                        [
+                                "Our library offers a wide range of resources, including books, journals, electronic databases, and multimedia materials. You can find more information about the library and its resources on our website.",
+                                "The library is open [9am to 8pm]. It offers a variety of resources, including books, journals, electronic databases, and multimedia materials. You can find more information on our website.",
+                                "The library hours are [9am to 8pm]. You can find more information about the library and its resources on our website.",
+                                "To borrow materials from the library, you will need a library card. You can obtain a library card by visiting the library and providing a valid form of identification."
+                        ],
+                        "context_text":""
+        },
+        {
+                        "tag": "Events",
+                        "patterns":
+                        [
+                                "What are the upcoming events?",
+                                "Is there any cultural event happening soon?",
+                                "Are there any workshops or seminars scheduled?",
+                                "Can you tell me about any guest lectures?"
+                        ],
+                        "responses": 
+                        [
+                                "We organize a variety of events throughout the year, including cultural events, workshops, seminars, and guest lectures. You can find more information on our website under the Events section.",
+                                "Yes, we have several cultural events coming up. You can find more information on our website under the Events section.",
+                                "Yes, we have several workshops and seminars scheduled. You can find more information on our website under the Events section.",
+                                "We frequently invite guest lecturers to speak on various topics. You can find more information on our website under the Events section."
+                        ],
+                        "context_text":""
+        },   
+        {
+                        "tag": "Campus Information",
+                        "patterns": 
+                        [
+                                "Where is the university located?",
+                                "What are the campus facilities?",
+                                "Can you give me a campus map?",
+                                "What are the student services available on campus?"
+                        ],
+                        "responses":
+                        [
+                                "The university is located in Kanchipuram, Tamil Nadu. You can find more information on our website under the About Us section.",
+                                "We have a variety of campus facilities, including sports facilities, library, computer lab, and more. You can find more information on our website under the Campus section."
+                        ],
+                        "context_text":""
+        },
+        {
+                        "tag": "Faculty and Staff",
+                        "patterns":
+                        [
+                                "Who are the faculty members at Kanchi University?",
+                                "What are the research interests of the faculty at Kanchi University?",
+                                "What are the areas of expertise of the faculty at Kanchi University?",
+                                "What publications have the faculty at Kanchi University produced?"
+                        ],
+                        "responses": 
+                        [
+                                "Kanchi University has a team of highly qualified and experienced faculty members who are dedicated to providing the best possible education to our students.",
+                                "Our faculty members have diverse research interests and areas of expertise, and have published numerous articles, books, and other publications. You can find more information about our faculty members on our website."
+                        ],
+                        "context_text":""
+        },
+        {
+                        "tag": "Financial Aid",
+                        "patterns": 
+                        [
+                                "Does Kanchi University offer financial aid?",
+                                "What scholarships are available at Kanchi University?",
+                                "What is the cost of living on campus at Kanchi University?"
+                        ],
+                        "responses": 
+                        [
+                                "The fees for the programs at Kanchi University vary depending on the program and the level of study.",
+                                " We offer a range of financial aid options, including scholarships, grants, and loans, to help students pay for their education. You can find more information about the fees and financial aid options on our website."
+                        ],
+                        "context_text":""
+        },
+        {
+                        "tag": "Student Life",
+                        "patterns": 
+                        [
+                                "What extracurricular activities are available at Kanchi University?",
+                                "Tell me about the student clubs and organizations at Kanchi University.",
+                                "What is the student community like at Kanchi University?"
+                        ],
+                        "responses": 
+                        [
+                                "At Kanchi University, we believe that a well-rounded education includes more than just academics. That's why we offer a range of extracurricular activities for our students, including sports teams, cultural clubs, and community service organizations."
+                        ],
+                        "context_text":""
+        },
+        {
+                        "tag": "Alumni Network",
+                        "patterns": 
+                        [
+                                "What is the alumni network like at Kanchi University?",
+                                "What kind of support do alumni receive from Kanchi University?",
+                                "How can I get involved with the Kanchi University alumni network?",
+                                "What are some notable alumni from Kanchi University?"
+                        ],
+                        "responses": 
+                        [
+                                "Kanchi University has a strong and active alumni network, with thousands of alumni all over the world.",
+                                "Our alumni receive ongoing support and opportunities to stay connected with the university and with each other.",
+                                "There are many ways to get involved with the alumni network, including attending events, volunteering, and mentoring current students.",
+                                "We have many notable alumni who have gone on to achieve great things in their careers and make a positive impact on their communities."
+                        ],
+                        "context_text":""
+        },
+        {
+                        "tag": "accommodation",
+                        "patterns": 
+                        [
+                                "What are the accommodation options for students at Kanchi University?",
+                                "accommodation in kanchi university"
+                        ],
+                        "responses": 
+                        [
+                                " We also have on-campus housing options for students who prefer to live on campus. Our student community is diverse and inclusive, and we are committed to providing a supportive and welcoming environment for all our students."
+                        ],
+                        "context_text":""
+        },
+        {
+                "tag":"fees",
+                "patterns":
+                [
+                        "How much does it cost to attend this college?",
+                        "Can you tell me about the tuition fees?",
+                        "Are there any scholarships or financial aid available?",
+                        "What is the cost of living on campus?"
+                ],
+                "responses":[
+                        "Our tuition fees vary depending on the program and degree level. You can find more information about the fees on our website.",
+                        "We offer scholarships and financial aid to eligible students. You can find more information about the available options on our website.",
+                        "The cost of living on campus varies depending on the housing option and meal plan chosen. You can find more information about the costs on our website."
+                ],
+                "context_text":""
+        },
+        {
+                
+                
+                    "tag": "transportation",
+                    "patterns": [
+                      "How do I get to the campus?",
+                      "What are the transportation options to get to the campus?",
+                      "Is there a shuttle service available?",
+                      "Can you provide me with directions to the campus?",
+                      "What is the best way to get to the campus?"
+                    ],
+                    "responses": [
+                      "The campus is easily accessible by car, bus, and train. There is also a shuttle service available for students. You can find more information about transportation options on our website.",
+                      "We recommend using Google Maps or another map application to find the best route to the campus. You can also find more information about transportation options on our website.",
+                      "The shuttle service runs from 8am to 7pm whole week. You can find more information about transportation options on our website."
+                    ],
+                    "context_text": ""
+                },
+                {
+                    "tag": "parking",
+                    "patterns": [
+                      "Where can I park on campus?",
+                      "Is there a parking lot available for visitors?",
+                      "How much does it cost to park on campus?",
+                      "What are the parking regulations on campus?",
+                      "Can I purchase a parking permit?"
+                    ],
+                    "responses": [
+                      "There are several parking lots available on campus for students and visitors. The cost to park on campus varies depending on the location and duration of parking. You can find more information about parking regulations and permits on our website.",
+                      "Visitors can park in the designated parking lots on campus. The cost to park on campus varies depending on the location and duration of parking. You can find more information about parking regulations and permits on our website.",
+                      "Parking on campus is free for students with a valid parking permit. Visitors can purchase a parking pass for Rs 20 per day. You can find more information about parking regulations and permits on our website.",
+                      "The parking regulations on campus include [parking regulations]. You can find more information about parking regulations and permits on our website.",
+                      "Students can purchase a parking permit for Rs 200 per semester. You can find more information about parking regulations and permits on our website."
+                    ],
+                    "context_text": ""
+                  },
+                  {
+                    "tag": "biking",
+                    "patterns": [
+                      "Is there a bike rack on campus?",
+                      "Can I bike to campus?",
+                      "Are there any bike rentals available?"
+                    ],
+                    "responses": [
+                      "Yes, there are several bike racks available on campus for students and visitors. We encourage biking to campus as a healthy and eco-friendly option. You can find more information about biking on our website.",
+                      "Yes, you can bike to campus. There are several bike racks available for students and visitors. You can find more information about biking on our website.",
+                      "Bike rentals are available for students and visitors. You can find more information about bike rentals and rates on our website."
+                    ],
+                    "context_text": ""
+                  },
+                
+        
+        {
+                "tag": "career services",
+                "patterns": 
+                [
+                        "Can you tell me about the career services offered by the college?",
+                        "How does the college help students find jobs after graduation?",
+                        "Are there any internship opportunities available?",
+                        "What kind of resources are available to help students with their job search?"
+                ],
+                "responses":
+                [
+                        "Our career services office offers a wide range of resources and programs to help students explore career options, develop job search skills, and connect with employers. You can find more information about the career services on our website.",
+                        "We offer various programs and services to help students find jobs after graduation, such as job fairs, employer recruitment events, and career counseling. You can find more information about the post-graduation job search on our website.",
+                        "We offer many internship opportunities to students, both on and off campus. You can find more information about the available internships on our website.",        
+                        "Our career services office provides students with access to resources such as resume and cover letter reviews, interview preparation workshops, and job search databases. You can find more information about the resources on our website."
+                ],
+                "context_text": ""
+        },
+        {
+                "tag":"emergency, safety, report, concern, crime, prevention, counseling, mental health",
+                "patterns":
+                [
+                        "I need to report an emergency on campus",
+                        "What are the campus safety policies and procedures?",
+                        "Is there a program for crime prevention on campus?",
+                        "I have a concern about my safety on campus",
+                        "Are there counseling or mental health services available on campus?"
+                ],
+                "responses":
+                [
+                        "If this is an emergency, please call 911 immediately. For non-emergencies, please call Campus Security at [phone number].",
+                        "Our campus takes safety very seriously. You can find more information about our policies and procedures on our website at [website address].",
+                        "Yes, we have several programs in place for crime prevention, including [list of programs].",
+                        "We're sorry to hear that. Please provide more information about your concern, and we'll do everything we can to help.",
+                        "Yes, we have counseling and mental health services available to all students. You can find more information about these services on our website at [website address]."
+                ],
+                "context_text": ""
+        },
+        {
+                "tag":"technical, support, troubleshoot, software, hardware, reset, password, access",
+                "patterns":
+                [
+                        "I'm having trouble with the learning management system. Can you help?",
+                        "How do I reset my password for my student account?",
+                        "I can't access my email. What should I do?",
+                        "My computer is acting up. Can you help me troubleshoot?",
+                        "I don't know how to use [specific software or application]. Can you provide guidance?"
+                ],
+                "responses":
+                [
+                        "Yes, we can help you troubleshoot the issue you're having with the learning management system. Please provide more information about the problem, and we'll do everything we can to help.",
+                        "To reset your password, please visit [website address] and follow the prompts. If you have any issues, please contact the IT department at [phone number or email address].",
+                        "If you're having trouble accessing your email, please contact the IT department at [phone number or email address].",
+                        "Let's try to figure out what's going on with your computer. Can you describe the problem in more detail?",
+                        "Of course, we can provide guidance on how to use [specific software or application]. Please let us know what you need help with."
+                ],
+                "context_text": ""
+        },
+        {
+                "tag":"course, information, schedule, prerequisites, availability, degree, major, grading, materials",
+                "patterns":
+                [
+                        "What courses are available this semester?",
+                        "How do I fulfill the degree requirements for my major?",
+                        "Can you help me understand the grading policies for this course?",
+                        "Are there any prerequisites for this class?",
+                        "Where can I find the course materials?",
+                        "Course materials"
+                ],
+                "responses":
+                [
+                        "You can find information about all the courses available this semester on our website at [website address].",
+                        "To fulfill the degree requirements for your major, you will need to complete [list of requirements]. You can find more information about these requirements on our website at [website address].",
+                        "The grading policies for this course are [describe grading policies].",
+                        "Yes, there are prerequisites for this class. You can find more information about these prerequisites on our website at [website address].",
+                        "You can access the course materials on the learning management system. If you're having trouble finding them, please let us know."
+                ],
+                "context_text": ""
+
+        }
+                  
+    ]
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SCSVMV</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0; 
+        border-radius: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+      .orig {
+        height: 100vh;
+        background-color: #000000;
+        background: url(https://images.unsplash.com/photo-1525921429624-479b6a26d84d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        background-position: center;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(7px);
+        overflow: hidden;
+        scrollbar-width: none;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+      }
+      a:hover {
+        color: #677575;
+      }
+      header {
+        position: relative;
+        padding: 0 2rem;
+      }
+      .navbar {
+        width: 100%;
+        height: 60px;
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .navbar .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .navbar .links {
+        display: flex;
+        gap: 2rem;
+      }
+      .navbar .toggle_btn {
+        color: #2f2f2f;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+      }
+      
+      .action_btn {
+        background-color: #8cf7fb;
+        color: #2f2f2f;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+      }
+      .action_btn :hover {
+        scale: 1.05;
+        color: #2f2f2f;
+      }
+      .action_btn:active {
+        scale: 0.95;
+      }
+      .dropdown_menu {
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 60px;
+        height: 0;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .dropdown_menu.open {
+        height: 240px;
+      }
+      .dropdown_menu li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dropdown_menu .action_btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      section#hero {
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+      }
+      #hero h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 750px) {
+        .navbar .links,
+        .navbar .action_btn {
+          display: none;
+        }
+
+        .navbar .toggle_btn {
+          display: block;
+        }
+        .dropdown_menu {
+          display: block;
+        }
+      }
+      @media (max-width: 576px) {
+        .dropdown_menu {
+          left: 2rem;
+          width: unset;
+        }
+      }
+      .bot-icon{
+        display: flex;
+        align-items: center;
+        justify-content:flex;
+        transform: translateY(-125%);
+      }
+    </style>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="https://kanchiuniv.ac.in/">SCSVMV University</a></div>
+        <ul class="links">
+          <li><a href="https://kanchiuniv.ac.in/">Home</a></li>
+          <li><a href="https://kanchiuniv.ac.in/about/">About</a></li>
+          <li><a href="https://kanchiuniv.ac.in/admission-2023-24/">Admission</a></li>
+          <li><a href="https://kanchiuniv.ac.in/placement-division/">Placements</a></li>
+          <li><a href="https://kanchiuniv.ac.in/events-page/">Campus Life</a></li>
+        </ul>
+        <a href="https://kanchiuniv.ac.in/feeportal/stulogin/login.php" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+          <li><a href="https://kanchiuniv.ac.in/">Home</a></li>
+          <li><a href="https://kanchiuniv.ac.in/about/">About</a></li>
+          <li><a href="https://kanchiuniv.ac.in/admission-2023-24/">Admission</a></li>
+          <li><a href="https://kanchiuniv.ac.in/placement-division/">Placements</a></li>
+          <li><a href="https://kanchiuniv.ac.in/events-page/">Campus Life</a></li>
+          
+          <li><a href="https://kanchiuniv.ac.in/feeportal/stulogin/login.php" class="action_btn">Get Started</a></li>
+      </div>
+    </header>
+    <div class="orig">
+    <main>
+      <section id="hero">
+        <h1>A Quality Education Grants Us The Ability To Fight The War On Ignorance And Poverty</h1>
+      </section>
+      <div>
+      
+     <a href="http://127.0.0.1:5000/" class="bot-icon" ><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+
+      <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+      <path d="M244 631 c-49 -12 -134 -63 -160 -94 -14 -17 -37 -53 -52 -81 -22 -43 -26 -64 -26 -136 -1 -74 3 -92 27 -137 21 -42 27 -66 27 -118 0 -36 4 -65 8 -65 5 0 32 7 61 16 43 12 59 13 81 4 16 -7 37 -10 47 -7 14 3 12 6 -12 17 -36 15 -76 17 -128 6 l-37 -8 0 52 c0 38 -8 69 -27 109 -40 80 -40 182 0 263 53 107 143 162 267 163 62 0 85 -5 132 -28 258 -126 203 -506 -81 -560 -33 -6 -61 -16 -61 -21 0 -15 101 4 150 29 71 36 103 67 141 137 31 58 34 70 34 148 0 78 -3 90 -34 148 -57 104 -144 160 -260 167 -36 2 -80 1 -97 -4z"/>
+      <path d="M180 482 c-23 -11 -42 -32 -55 -59 -11 -23 -28 -44 -37 -46 -27 -8 -25 -87 2 -94 11 -3 20 -11 20 -18 0 -30 31 -45 94 -45 34 0 67 -5 73 -11 6 -6 23 -9 39 -7 23 2 29 8 29 28 0 29 -34 39 -69 20 -12 -6 -49 -10 -81 -8 -57 3 -60 4 -63 31 -2 19 -9 27 -23 27 -14 0 -19 7 -19 30 0 17 5 30 10 30 6 0 10 -9 10 -20 0 -11 5 -20 10 -20 6 0 10 16 10 35 0 48 24 91 60 110 40 21 220 21 260 0 30 -15 60 -61 60 -90 0 -8 9 -15 20 -15 16 0 20 -7 20 -30 0 -16 -4 -30 -10 -30 -5 0 -10 9 -10 20 0 11 -4 20 -10 20 -5 0 -10 -20 -10 -45 0 -105 -43 -135 -192 -135 -86 0 -108 3 -137 21 -36 22 -52 19 -31 -6 22 -26 83 -37 192 -33 127 4 154 18 178 91 9 27 22 48 33 51 25 6 25 86 -1 93 -10 2 -27 23 -38 46 -28 62 -65 77 -194 77 -80 0 -113 -4 -140 -18z m150 -252 c0 -5 -9 -10 -20 -10 -11 0 -20 5 -20 10 0 6 9 10 20 10 11 0 20 -4 20 -10z"/>
+      <path d="M192 397 c-28 -30 -28 -68 1 -95 21 -20 34 -22 128 -22 97 0 107 2 127 23 28 30 28 68 -1 95 -19 18 -35 22 -90 22 -38 0 -67 -4 -67 -10 0 -6 28 -10 64 -10 68 0 96 -14 96 -50 0 -40 -26 -50 -130 -50 -76 0 -102 4 -114 16 -33 32 -8 84 40 84 13 0 24 5 24 10 0 20 -56 10 -78 -13z"/>
+      <path d="M224 366 c-10 -26 4 -48 28 -44 33 4 33 52 0 56 -13 2 -25 -3 -28 -12z m36 -16 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10 -10z"/>
+      <path d="M364 366 c-10 -26 4 -48 28 -44 33 4 33 52 0 56 -13 2 -25 -3 -28 -12z m36 -16 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10 -10z"/>
+      </g>
+      </svg></a>
+      
+    </div>
+    </main>
+    </div>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn');
+      const toggleBtnIcon = document.querySelector('.toggle_btn i');
+      const dropDownMenu = document.querySelector('.dropdown_menu');
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
+      }
+    </script>
+ </body>
+</html>
