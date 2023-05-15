@@ -1,22 +1,24 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 12 18:39:58 2023
-
-@author: TEJA
-"""
-
 import nltk
-nltk.download('popular')
-from nltk.stem import WordNetLemmatizer
-lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
-
-from keras.models import load_model
-model = load_model('model.h5')
 import json
 import random
-intents = json.loads(open('data.json').read())
+import speech_recognition as sr
+import pyttsx3
+import threading
+
+from nltk.stem import WordNetLemmatizer
+from keras.models import load_model
+from flask import Flask, render_template, request
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+nltk.download('popular')
+
+lemmatizer = WordNetLemmatizer()
+
+model = load_model('model.h5')
+
+intents = json.loads(open('data.json', encoding='utf-8').read())
 words = pickle.load(open('texts.pkl','rb'))
 classes = pickle.load(open('labels.pkl','rb'))
 
@@ -49,6 +51,17 @@ def predict_class(sentence, model):
     res = model.predict(np.array([p]))[0]
     ERROR_THRESHOLD = 0.25
     results = [[i,r] for i,r in enumerate(res) if r>ERROR_THRESHOLD]
+    
+    # Pass the sentence through a sentiment analysis model
+    sentiment_score = SentimentIntensityAnalyzer().polarity_scores(sentence)['compound']
+    
+    # Adjust the probability scores based on the sentiment analysis result
+    for i, r in results:
+        if sentiment_score > 0:
+            res[i] = r * 1.1
+        elif sentiment_score < 0:
+            res[i] = r * 0.9
+    
     # sort by strength of probability
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
@@ -68,10 +81,19 @@ def getResponse(ints, intents_json):
 def chatbot_response(msg):
     ints = predict_class(msg, model)
     res = getResponse(ints, intents)
-    return res
+    text_response = res
+    voice_response = res
+    return text_response, voice_response
 
 
-from flask import Flask, render_template, request
+def speak(text):
+    engine = pyttsx3.init()
+    # set voice to a female voice
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[1].id) # 1 is the index of a female voice
+    engine.say(text)
+    engine.runAndWait()
+
 
 app = Flask(__name__)
 app.static_folder = 'static'
@@ -81,10 +103,30 @@ def home():
     return render_template("index.html")
 
 @app.route("/get")
-def get_bot_response():
+def get_response():
     userText = request.args.get('msg')
-    return chatbot_response(userText)
+    text_response, voice_response = chatbot_response(userText)
+    t1 = threading.Thread(target=speak, args=(voice_response,))
+    t1.start()
+    return text_response
 
+@app.route("/speech")
+def speech_response():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Say something!")
+        audio = r.listen(source)
+        try:
+            text = r.recognize_google(audio)
+            print("You said: ", text)
+            text_response, voice_response = chatbot_response(text)
+            t1 = threading.Thread(target=speak, args=(voice_response,))
+            t1.start()
+            return text_response
+        except:
+            print("Sorry, I could not understand what you said.")
+            return "Sorry, I could not understand what you said."
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
+

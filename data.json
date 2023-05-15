@@ -13,6 +13,7 @@
                                 "how are you",
                                 "heyy",
                                 "whatsup",
+                                "what is your name?",
                                 "Hey there"
                     ],
                     "responses":
@@ -23,7 +24,8 @@
                                 "Hello! What can I help you with?",
                                 "Hey there! What do you need help with?",
                                 "Good morning! How can I assist you today?",
-                                "Good afternoon! What can I help you with?"
+                                "Good afternoon! What can I help you with?",
+                                "My name is UniBot"
                     ], 
                     "context_text": ""
         },
@@ -35,15 +37,17 @@
                                 "What are the admission requirements?",
                                 "When is the deadline to apply?",
                                 "Can you tell me about the admission process?",
-                                "What are the minimum requirements for admission?"
+                                "What are the minimum requirements for admission?",
+                                "Do you offer any scholarships?"
                         ],
                     "responses":
                      [
-                                "You can apply for admission by visiting our website and submitting an online application. The admission requirements and deadlines can be found on our website as well.",
-                                "The admission requirements and deadlines can be found on our website. We encourage you to apply online as soon as possible to ensure consideration for admission.",
-                                "Our admission process involves several steps, including submitting an application, providing transcripts and test scores, and possibly participating in an interview. You can find more information on our website.",
-                                "To apply for admission, you will need to submit an online application and provide transcripts and test scores. The admission requirements and deadlines can be found on our website.",
-                                "Our minimum requirements for admission vary depending on the program and degree level. You can find more information about the requirements on our website."
+                                "You can apply for admission by visiting our website and submitting an online application.To apply for admission, you will need to submit an online application and provide transcripts and test scores.",
+                                "The admission requirements can be found on our website. We encourage you to apply online as soon as possible to ensure consideration for admission.",
+                                "The admission requirements and deadlines can be found on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                                "Our admission process involves several steps, including submitting an application, providing transcripts and test scores, and possibly participating in an interview. You can find more information on our website.<a href='https://kanchiuniv.ac.in/admission/procedure/'>Click here</a>",
+                                "Our minimum requirements for admission vary depending on the program and degree level. You can find more information about the requirements on our website.<a href='https://kanchiuniv.ac.in/admission/courses-offered-and-eligibility/'>Click here</a>",
+                                "Yes, we offer a number of scholarships for qualified applicants."
                      ],
                 "context_text": ""
         },
@@ -52,16 +56,20 @@
                     "patterns":
                         [
                                 "What courses do you offer?",
-                                "Can you tell me about your programs?",
+                                "Can you tell me more about the undergraduate programs?",
                                 "What are the course requirements?",
-                                "How long does it take to complete a program?"
-                        ],
+                                "Do you offer any online programs?",
+                                "How long does it take to complete a program?",
+                                "What certificate programs are available?"
+                        ],      
                     "responses":
                         [
-                                "We offer a wide range of undergraduate and graduate programs in various disciplines, including engineering, sciences, humanities, and social sciences. You can find more information about our programs on our website.",
-                                "Our programs are designed to provide students with a strong foundation in their chosen discipline, as well as opportunities for research, internships, and practical experience. You can find more information about our programs on our website.",
-                                "The course requirements vary depending on the program and degree level. You can find more information about the requirements for each program on our website.",
-                                "The duration of our programs varies depending on the degree level and program. Most undergraduate programs take four years to complete, while graduate programs can take anywhere from one to three years or more. You can find more information about the duration of each program on our website."
+                                "We offer a wide range of undergraduate and graduate programs in various disciplines, including engineering, sciences, humanities, and social sciences. You can find more information about our programs on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                                "Our undergraduate programs include Bachelor of Arts, Bachelor of Science, and Bachelor of Fine Arts degrees",
+                                "The course requirements vary depending on the program and degree level. You can find more information about the requirements for each program on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                                "We also offer online programs and continuing education courses.",
+                                "The duration of our programs varies depending on the degree level and program. Most undergraduate programs take four years to complete, while graduate programs can take anywhere from one to three years or more. You can find more information about the duration of each program on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                                "Please visit our website for more information about our programs<a href='https://kanchiuniv.ac.in/'>Click here</a>"
                         ],
                         "context_text": ""
         },
@@ -76,10 +84,10 @@
                         ],
                         "responses": 
                         [
-                                "You can contact the university by phone or email. The phone number and email address can be found on our website.",
-                                "Our phone number is [insert phone number]. You can also send an email to [insert email address].",
-                                "You can email us at [insert email address]. Our phone number is [insert phone number].",
-                                "The physical address of the university is [insert address]. You can find a map and directions on our website."
+                                "You can contact the university by phone or email. The phone number and email address can be found on our website. <a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                                "Our phone number is [044-27264293,27264308,27264301]. You can also send an email to [registrar@kanchiuniv.ac.in].",
+                                "You can email us at [registrar@kanchiuniv.ac.in]. Our phone number is [044-27264293,27264308,27264301].",
+                                "The physical address of the university is [Sri Jayendra Saraswathi Street, Enathur, Tamil Nadu 631561]. You can find a map and directions on our website.<a href='https://www.google.com/maps/dir/12.8678364,79.7287696/scsvmv/@12.8638952,79.7281314,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52c20d805eb7bd:0x489fbef75f724222!2m2!1d79.7303437!2d12.8601799'>Click here for directions</a>"
                         ],
                         "context_text":""
         },
@@ -94,9 +102,9 @@
                         ],
                         "responses": 
                         [
-                                "Our library offers a wide range of resources, including books, journals, electronic databases, and multimedia materials. You can find more information about the library and its resources on our website.",
-                                "The library is open [9am to 8pm]. It offers a variety of resources, including books, journals, electronic databases, and multimedia materials. You can find more information on our website.",
-                                "The library hours are [9am to 8pm]. You can find more information about the library and its resources on our website.",
+                                "Our library offers a wide range of resources, including books, journals, electronic databases, and multimedia materials. You can find more information about the library and its resources on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                                "The library is open [9am to 8pm]. It offers a variety of resources, including books, journals, electronic databases, and multimedia materials. You can find more information on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                                "The library hours are [9am to 8pm]. You can find more information about the library and its resources on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
                                 "To borrow materials from the library, you will need a library card. You can obtain a library card by visiting the library and providing a valid form of identification."
                         ],
                         "context_text":""
@@ -139,15 +147,17 @@
                         "tag": "Faculty and Staff",
                         "patterns":
                         [
-                                "Who are the faculty members at Kanchi University?",
+                                "Who are the faculty members in the Computer Science department?",
                                 "What are the research interests of the faculty at Kanchi University?",
                                 "What are the areas of expertise of the faculty at Kanchi University?",
-                                "What publications have the faculty at Kanchi University produced?"
+                                "What publications have the faculty at Kanchi University produced?",
+                                "What is the faculty-to-student ratio?"
                         ],
                         "responses": 
                         [
-                                "Kanchi University has a team of highly qualified and experienced faculty members who are dedicated to providing the best possible education to our students.",
-                                "Our faculty members have diverse research interests and areas of expertise, and have published numerous articles, books, and other publications. You can find more information about our faculty members on our website."
+                                "Our University has a team of highly qualified and experienced faculty members who are dedicated to providing the best possible education to our students.",
+                                "Our faculty members have diverse research interests and areas of expertise, and have published numerous articles, books, and other publications. You can find more information about our faculty members on our website.<a href='https://kanchiuniv.ac.in/academics/department-of-computer-science-and-engineering/faculty-department-computer-science-and-engg/'>Click here</a>",
+                                "The faculty-to-student ratio varies by program and department, but we strive to maintain a low ratio to ensure that students receive individualized attention and support."
                         ],
                         "context_text":""
         },
@@ -162,7 +172,7 @@
                         "responses": 
                         [
                                 "The fees for the programs at Kanchi University vary depending on the program and the level of study.",
-                                " We offer a range of financial aid options, including scholarships, grants, and loans, to help students pay for their education. You can find more information about the fees and financial aid options on our website."
+                                " We offer a range of financial aid options, including scholarships, grants, and loans, to help students pay for their education. You can find more information about the fees and financial aid options on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>"
                         ],
                         "context_text":""
         },
@@ -170,14 +180,20 @@
                         "tag": "Student Life",
                         "patterns": 
                         [
-                                "What extracurricular activities are available at Kanchi University?",
-                                "Tell me about the student clubs and organizations at Kanchi University.",
-                                "What is the student community like at Kanchi University?"
+                                "What is campus life like?",
+                                "Can you tell me about the housing options?",
+                                "What meal plans are available?",
+                                "What student organizations are on campus?",
+                                "Are there any upcoming events?"
                         ],
                         "responses": 
                         [
-                                "At Kanchi University, we believe that a well-rounded education includes more than just academics. That's why we offer a range of extracurricular activities for our students, including sports teams, cultural clubs, and community service organizations."
-                        ],
+                                "Campus life is vibrant and diverse, with many opportunities for students to get involved in extracurricular activities and organizations.",
+                                "We offer a variety of housing options, including dormitories and apartments",
+                                "We offer a variety of meal plans that cater to different dietary needs.",
+                                "Our student organizations cover a wide range of interests, from cultural clubs to academic and professional organizations.",
+                                "We regularly host events such as guest lectures, perfomances."
+                        ],         
                         "context_text":""
         },
         {
@@ -221,9 +237,9 @@
                         "What is the cost of living on campus?"
                 ],
                 "responses":[
-                        "Our tuition fees vary depending on the program and degree level. You can find more information about the fees on our website.",
-                        "We offer scholarships and financial aid to eligible students. You can find more information about the available options on our website.",
-                        "The cost of living on campus varies depending on the housing option and meal plan chosen. You can find more information about the costs on our website."
+                        "Our tuition fees vary depending on the program and degree level. You can find more information about the fees on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                        "We offer scholarships and financial aid to eligible students. You can find more information about the available options on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                        "The cost of living on campus varies depending on the housing option and meal plan chosen. You can find more information about the costs on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>"
                 ],
                 "context_text":""
         },
@@ -239,9 +255,9 @@
                       "What is the best way to get to the campus?"
                     ],
                     "responses": [
-                      "The campus is easily accessible by car, bus, and train. There is also a shuttle service available for students. You can find more information about transportation options on our website.",
-                      "We recommend using Google Maps or another map application to find the best route to the campus. You can also find more information about transportation options on our website.",
-                      "The shuttle service runs from 8am to 7pm whole week. You can find more information about transportation options on our website."
+                      "The campus is easily accessible by car, bus, and train. There is also a shuttle service available for students. You can find more information about transportation options on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                      "We recommend using Google Maps or another map application to find the best route to the campus. You can also find more information about transportation options on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                      "The shuttle service runs from 8am to 7pm whole week. You can find more information about transportation options on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>"
                     ],
                     "context_text": ""
                 },
@@ -255,11 +271,11 @@
                       "Can I purchase a parking permit?"
                     ],
                     "responses": [
-                      "There are several parking lots available on campus for students and visitors. The cost to park on campus varies depending on the location and duration of parking. You can find more information about parking regulations and permits on our website.",
-                      "Visitors can park in the designated parking lots on campus. The cost to park on campus varies depending on the location and duration of parking. You can find more information about parking regulations and permits on our website.",
-                      "Parking on campus is free for students with a valid parking permit. Visitors can purchase a parking pass for Rs 20 per day. You can find more information about parking regulations and permits on our website.",
-                      "The parking regulations on campus include [parking regulations]. You can find more information about parking regulations and permits on our website.",
-                      "Students can purchase a parking permit for Rs 200 per semester. You can find more information about parking regulations and permits on our website."
+                      "There are several parking lots available on campus for students and visitors. The cost to park on campus varies depending on the location and duration of parking. You can find more information about parking regulations and permits on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                      "Visitors can park in the designated parking lots on campus. The cost to park on campus varies depending on the location and duration of parking. You can find more information about parking regulations and permits on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                      "Parking on campus is free for students with a valid parking permit. Visitors can purchase a parking pass for Rs 20 per day. You can find more information about parking regulations and permits on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                      "The parking regulations on campus include [parking regulations]. You can find more information about parking regulations and permits on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                      "Students can purchase a parking permit for Rs 200 per semester. You can find more information about parking regulations and permits on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>"
                     ],
                     "context_text": ""
                   },
@@ -290,10 +306,10 @@
                 ],
                 "responses":
                 [
-                        "Our career services office offers a wide range of resources and programs to help students explore career options, develop job search skills, and connect with employers. You can find more information about the career services on our website.",
-                        "We offer various programs and services to help students find jobs after graduation, such as job fairs, employer recruitment events, and career counseling. You can find more information about the post-graduation job search on our website.",
-                        "We offer many internship opportunities to students, both on and off campus. You can find more information about the available internships on our website.",        
-                        "Our career services office provides students with access to resources such as resume and cover letter reviews, interview preparation workshops, and job search databases. You can find more information about the resources on our website."
+                        "Our career services office offers a wide range of resources and programs to help students explore career options, develop job search skills, and connect with employers. You can find more information about the career services on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                        "We offer various programs and services to help students find jobs after graduation, such as job fairs, employer recruitment events, and career counseling. You can find more information about the post-graduation job search on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                        "We offer many internship opportunities to students, both on and off campus. You can find more information about the available internships on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
+                        "Our career services office provides students with access to resources such as resume and cover letter reviews, interview preparation workshops, and job search databases. You can find more information about the resources on our website<a href='https://kanchiuniv.ac.in/'>Click here</a>"
                 ],
                 "context_text": ""
         },
@@ -310,10 +326,10 @@
                 "responses":
                 [
                         "If this is an emergency, please call 911 immediately. For non-emergencies, please call Campus Security at [phone number].",
-                        "Our campus takes safety very seriously. You can find more information about our policies and procedures on our website at [website address].",
+                        "Our campus takes safety very seriously. You can find more information about our policies and procedures on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>",
                         "Yes, we have several programs in place for crime prevention, including [list of programs].",
                         "We're sorry to hear that. Please provide more information about your concern, and we'll do everything we can to help.",
-                        "Yes, we have counseling and mental health services available to all students. You can find more information about these services on our website at [website address]."
+                        "Yes, we have counseling and mental health services available to all students. You can find more information about these services on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>"
                 ],
                 "context_text": ""
         },
@@ -330,35 +346,323 @@
                 "responses":
                 [
                         "Yes, we can help you troubleshoot the issue you're having with the learning management system. Please provide more information about the problem, and we'll do everything we can to help.",
-                        "To reset your password, please visit [website address] and follow the prompts. If you have any issues, please contact the IT department at [phone number or email address].",
-                        "If you're having trouble accessing your email, please contact the IT department at [phone number or email address].",
+                        "To reset your password, please visit <a href='https://kanchiuniv.ac.in/'>Click here</a> and follow the prompts. If you have any issues, please contact the IT department at [040-27264293,27264308,27264301 or mail to registrar@kanchiuniv.ac.in].",
+                        "If you're having trouble accessing your email, please contact the IT department at [040-27264293,27264308,27264301 or mail to registrar@kanchiuniv.ac.in].",
                         "Let's try to figure out what's going on with your computer. Can you describe the problem in more detail?",
                         "Of course, we can provide guidance on how to use [specific software or application]. Please let us know what you need help with."
                 ],
                 "context_text": ""
         },
         {
-                "tag":"course, information, schedule, prerequisites, availability, degree, major, grading, materials",
+                "tag":"information, schedule, availability,major, grading,",
                 "patterns":
                 [
-                        "What courses are available this semester?",
                         "How do I fulfill the degree requirements for my major?",
-                        "Can you help me understand the grading policies for this course?",
-                        "Are there any prerequisites for this class?",
-                        "Where can I find the course materials?",
-                        "Course materials"
+                        "Can you help me understand the grading policies for this course?"
+                        
                 ],
                 "responses":
                 [
-                        "You can find information about all the courses available this semester on our website at [website address].",
-                        "To fulfill the degree requirements for your major, you will need to complete [list of requirements]. You can find more information about these requirements on our website at [website address].",
-                        "The grading policies for this course are [describe grading policies].",
-                        "Yes, there are prerequisites for this class. You can find more information about these prerequisites on our website at [website address].",
-                        "You can access the course materials on the learning management system. If you're having trouble finding them, please let us know."
+                        
+                        "The grading policies for this course are [describe grading policies]."
+                        
                 ],
                 "context_text": ""
 
-        }
-                  
+        },
+        {
+                "tag":"prerequisites",
+                "patterns":["Are there any prerequisites for this class?"],
+                "responses":["Yes, there are prerequisites for this class. You can find more information about these prerequisites on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>"]
+                
+        },
+        {
+                "tag":"course information",
+                "patterns":["What courses are available this semester?","courses for this sem"],
+                "responses":["You can find information about all the courses available this semester on our website.<a href='https://kanchiuniv.ac.in/'>Click here</a>"],
+                "context_text":""
+
+        },
+        {
+                "tag":"materials",
+                "patterns":["Where can I find the course materials?",
+                "Course materials"],
+                "responses":["You can access the course materials on the learning management system. If you're having trouble finding them, please let us know."],
+                "context_text":""
+        },
+        {       
+                "tag":"degree requirements",
+                "patterns":["degree requierements"],
+                "responses":[ "To fulfill the degree requirements for your major, you will need to complete [list of requirements]. You can find more information about these requirements on our website at <a href='https://kanchiuniv.ac.in/'>Click here</a>"],
+                "context_text":""
+        },
+        {
+                "tag": "prerequisites",
+                "patterns":
+                [
+                        "What are the prerequisites for this class?"
+                ],
+                "responses":
+                [
+                        "You can find more information about the prerequisites for this class on our website at <a href='https://kanchiuniv.ac.in/'>https://kanchiuniv.ac.in/</a>."
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"about",
+                "patterns":
+                [
+                        "About scsvmv,About the emblem,Vision,Mission"
+                ],
+                "responses": 
+                [
+                        "The Maha Swamiji of Sri Kanchi Kamakoti Peetam had cherished a desire to revive Kanchipuram to its pristine glory as a center of learning.","The motto “vande sadgurum chandrasekharam” means ‘I adore the virtuous preceptor’ guru sri chandrasekharendra saraswathi maha swamigal, by whose name the viswa mahavidyalaya is established and stands to fulfill his great vision","The university envisages a culture that is characterized by excellent faculty-student interaction and prevalence of ‘one family’ atmosphere","To provide “quality higher education coupled with Indian Value system and at the same time make it affordable to all sections of the society irrespective of their social or economic standing”.","The mission is a holistic approach to higher education with academic standards consistent with an embedded value system, enriched by a dynamic process of synergy. The Mantra is “Educational Delight” of students engaged in study and faculty engaged in teaching and research in their journey Towards Excellence with Creativity."
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"His Holiness",
+                "patterns":
+                [
+                        "holiness"
+                ],
+                "responses": 
+                [
+                        "The venerated Sri Kanchi Kamakoti Peetham, established by Jagadguru Adi Sankara, who adorned it as the first Shankaracharya, has seen an unbroken lineage of Peethadhipatis."
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"chancellor,CHANCELLOR",
+                "patterns":
+                [
+                        "who is the chancellor of this university","who is the chancellor of this scsvmv","scsvmv chancellor","chancellor"
+                ],
+                "responses":
+                [
+                        "Prof. Dr. S. Jayarama Reddy is the Chancellor of, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (Deemed to be University), Kanchipuram"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"vice chancellor, VICE CHANCELLOR",
+                "patterns":
+                [
+                        "who is the vice chancellor of this university","who is the vice chancellor of this scsvmv","scsvmv vice chancellor"," vice chancellor","vc"
+                ],
+                "responses":
+                [
+                        "Prof. Dr. S.V. Raghavan,Vice Chancellor"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"Accreditations",
+                "patterns":
+                [
+                        "aicte","AICTE","All india council for technical education",
+                        "Association of indian Universities","Aiu","AIU",
+                        "NAAC","NAAC grade","naac"
+                ],
+                "responses":
+                [
+                        "SCSVMV is approved by AICTE",
+                        "SCSVMV is a member of AIU",
+                        "SCSVMV is accredited by NAAC with A grade"
+                ],
+                "context_text":""
+        },
+        {
+                "tag": "results",
+                "patterns": ["results portal", "take me to results portal", "where can I check my result"],
+                "responses": ["Results portal is a portal for all the students who have completed their courses. You can find the results portal by clicking on <a href='http://192.168.15.115/scsvmvonline/online/results/onlineResult.jsp'>Click here</a>"],
+                "context_text": ""
+        },
+        {
+                "tag": "attendance",
+                "patterns": ["how to check my attendance", "attendance portal", "attendance"],
+                "responses": ["Students can check their attendance through the attendance portal.<a href='http://192.168.15.115/scsvmvonline/students/loginManager/youLogin.jsp'>Click here</a>"],
+                "context_text": ""
+        },
+        {
+                "tag":"Accreditations1",
+                "patterns":
+                [
+                        "UGC","University grants commission"
+                ],
+                "responses":
+                [
+                        "SCSVMV is recognised by UGC"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"placement",
+                "patterns":
+                [
+                        "placements","about placements"
+                ],
+                "responses":
+                [
+                        "Every student comes with an aspiration for a flying career. The training and placement division work to support the student’s aspirations with an aim to guide them to start building a career and not just an employment."
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"collage careers",
+                "patterns":
+                [
+                        "how can  i join in this university","collage career"
+                ],
+                "responses":
+                [
+                        "you can join our collage through <a href='https://kanchiuniv.ac.in/careersportal/'>here</a>"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"alumni registration",
+                "patterns":
+                [
+                        "how to register for alumni","alumni registration"
+                ],
+                "responses":
+                [
+                        "You can register for alumni through <a href='https://kanchiuniv.ac.in/alumni/'>here</a> "
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"brochure",
+                "patterns":
+                [
+                        "is there a brochure ?","brochure","scsvmv brochure"
+                ],
+                "responses":
+                [
+                        "You con find our brochure through <a href='chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://kanchiuniv.ac.in/wp-content/uploads/2022/07/SCSVMV_PROSPECTUS.pdf'>here</a>"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"admission procedure",
+                "patterns":
+                [
+                        "what is the admission procedure in scsvmv","admission procedure"
+                ],
+                "responses":
+                [
+                        "we have a very long admission process you can find more information on our website or thorough this <a href='https://kanchiuniv.ac.in/wp-content/uploads/2020/09/admission-procedure.png'>picture</a>"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"research and publication wing",
+                "patterns":
+                [
+                        "what is research and publication wing","about research and publication wing","research and publication wing"
+                ],
+                "responses":
+                [
+                        "we have various information on research you can find more information through here <a href='https://kanchiuniv.ac.in/research/research-publication-wing/'>here</a>"
+                ],
+                "context_text":""
+        },        
+        {
+                "tag":"Sri Jayendra Saraswathi Centre For Advanced Research",
+                "patterns":
+                [
+                        "Sri Jayendra Saraswathi Centre For Advanced Research","SJCAR","what is SJCAR ?","what is Sri Jayendra Saraswathi Centre For Advanced Research"
+                ],
+                "responses":
+                [
+                        "Sri Jayendra Saraswathi Centre For Advanced Research (SJCAR) was set up in the year 2014 to capitalise on the mature infrastructure of equipment and expertise established in the University. The Centre channelizes these resources towards the realization of products that will aid educational institutes of higher learning to achieve the excellence in the academic standards. "
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"funded research",
+                "patterns":
+                [
+                        "funded research in scsvmv","funded research"
+                ],
+                "responses":
+                [
+                        "A Differential Thermal Analyser (DTA) has been developed as an import substitution step, with funding from DST. This venture makes it affordable to institutions of higher education, to provide ‘hands-on’ experience with higher realms of laboratory instruments, to PG students.,The electronics for the operation of a customized oxygen gas sensor is being developed, with funding from DRDO. The electronics module would be a compact stand-alone unit complete with the sensor biasing temperature control and amperometric signal conditioning and measurement circuitry."
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"university funded research",
+                "patterns":
+                [
+                        "what is University funded research","university funded research"
+                ],
+                "responses":
+                [
+                        "A Student-Version Absorption Spectro-photometer has been developed, employing a facile fabrication method, for producing a desired quantity of this instrument. The speciality of this student version is that it extends ‘hand-holding’ to the new learner, taking the learner through the intricacies of spectral absorption spectrometry. Experimental runs have also been conducted and found satisfactory. Market launch of this product is in the process."
+                ],
+                "context_text":""
+        },      
+        {
+                "tag":"technologies developed",
+                "patterns":
+                [
+                        "technologies developed","what are the technologies developed?"
+                ],
+                "responses":
+                [
+                        "a variety of technologies are developed for example As a socially relevant theme, the University has come up with a fabrication-ready design for an automated mechanism that will pre-clean the used plates at lunch time in industrial canteens so that the person to clean the plates does not have to handle the dirty plates with refuse food. The plate comes for final cleaning after the left over food is removed by mechanization and is also water sprayed so that the plate comes with no left over food and is more dignified for the worker to handle. The mechanism is easy to set up and is not expensive."
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"Culturals",
+                "patterns":
+                [
+                        "Culturals","Culturals in scsvmv","what about Culturals in scsvmv"
+                ],
+                "responses":
+                [
+                        "a variety of cultural events are being conducted in scsvmv for more information you can visit our website <a href='https://kanchiuniv.ac.in/campus-life/culturals/'>click here</a>"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"Circulars",
+                "patterns":
+                [
+                        "what is new going on in the campus","circulars"
+                ],
+                "responses":
+                [
+                        "Students can find all the related information of what is going on in the collage through our <a href='https://kanchiuniv.ac.in/campus-life/circular/'>circular page</a> in our website"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"facilities",
+                "patterns":
+                [
+                        "what are the facilities of the University","facilities","what are the facilities provided by the University"
+                ],
+                "responses":
+                [
+                        "Our University Facilities include: WIFI , Gym , Bank , Medical facility , campus IT infrastructure and solutions"
+                ],
+                "context_text":""
+        },
+        {
+                "tag":"certificates request and payment ",
+                "patterns":
+                [
+                        "where can i get my certificates ?","How to pay my fee ?","passed out student certificates"
+                ],
+                "responses":
+                [
+                        "You can get your certificates and pay your fees through our payment portal for more information visit directly by <a href='https://kanchiuniv.ac.in/certificate/login.php'>clicking here</a> "
+                ],
+                "context_text":""        
+        }   
     ]
 }

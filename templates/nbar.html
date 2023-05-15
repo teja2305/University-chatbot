@@ -21,8 +21,7 @@
         border-radius: border-box;
         font-family: "Open Sans", sans-serif;
       }
-      .orig {
-        height: 100vh;
+      .body {
         background-color: #000000;
         background: url(https://images.unsplash.com/photo-1525921429624-479b6a26d84d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
         background-position: center;
@@ -30,7 +29,7 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        backdrop-filter: blur(7px);
+        /* backdrop-filter: blur(7px); */
         overflow: hidden;
         scrollbar-width: none;
       }
@@ -121,7 +120,7 @@
         justify-content: center;
       }
       section#hero {
-        height: calc(100vh - 60px);
+        height: 568px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,7 +132,7 @@
         font-size: 3rem;
         margin-bottom: 1rem;
       }
-      @media (max-width: 750px) {
+      @media (max-width: 992px) {
         .navbar .links,
         .navbar .action_btn {
           display: none;
@@ -156,7 +155,7 @@
         display: flex;
         align-items: center;
         justify-content:flex;
-        transform: translateY(-125%);
+        transform: translateY(-25%);
       }
     </style>
     <header>
@@ -171,8 +170,9 @@
         </ul>
         <a href="https://kanchiuniv.ac.in/feeportal/stulogin/login.php" class="action_btn">Login</a>
         <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i></div>
+            <i class="fa-solid fa-bars"></i>
         </div>
+      </div>
 
         <div class="dropdown_menu">
           <li><a href="https://kanchiuniv.ac.in/">Home</a></li>
@@ -180,11 +180,10 @@
           <li><a href="https://kanchiuniv.ac.in/admission-2023-24/">Admission</a></li>
           <li><a href="https://kanchiuniv.ac.in/placement-division/">Placements</a></li>
           <li><a href="https://kanchiuniv.ac.in/events-page/">Campus Life</a></li>
-          
           <li><a href="https://kanchiuniv.ac.in/feeportal/stulogin/login.php" class="action_btn">Login</a></li>
       </div>
     </header>
-    <div class="orig">
+    <div class="body">
     <main>
       <section id="hero">
         <h1>A Quality Education Grants Us The Ability To Fight The War On Ignorance And Poverty</h1>
@@ -207,16 +206,16 @@
     </div>
 
     <script>
-      const toggleBtn = document.querySelector('.toggle_btn');
-      const toggleBtnIcon = document.querySelector('.toggle_btn i');
-      const dropDownMenu = document.querySelector('.dropdown_menu');
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
 
       toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open');
-        const isOpen = dropDownMenu.classList.contains('open');
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
         toggleBtnIcon.classList = isOpen
           ? 'fa-solid fa-xmark'
-          : 'fa-solid fa-bars';
+          : 'fa-solid fa-bars'
       }
     </script>
  </body>
